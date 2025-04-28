@@ -11,6 +11,9 @@ import Signup from './pages/common/Signup';
 import Login from './pages/common/Login';
 import ForgotPassword from './pages/common/ForgotPassword';
 import ChangePassword from './pages/common/ChangePassword';
+import WriteBlog from './pages/author/WriteBlog';
+import ReadBlog from './pages/common/ReadBlog';
+import EditBlog from './pages/author/EditBlog';
 
 function App() {
   return (
@@ -21,6 +24,7 @@ function App() {
         <Route path="login" element={<Login/>} />
         <Route path="forgot-password" element={<ForgotPassword/>} />
         <Route path="change-password" element={<ChangePassword/>} />
+        <Route path="read-blog/:blogId" element={<ReadBlog/>} />
 
         {/* Default : Reader Dashboard */}
         <Route path="/" element={<ReaderLayout />}>
@@ -35,6 +39,8 @@ function App() {
         {/* Author Dashboard */}
         <Route path="/author" element={<AuthorLayout/>}>
           <Route index element={<AuthorHome/>} />
+          <Route path="write-blog" element={<WriteBlog/>} />
+          <Route path="edit-blog/:blogId" element={<EditBlog/>} />
         </Route>
 
         {/* Error Page */}
@@ -44,4 +50,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
