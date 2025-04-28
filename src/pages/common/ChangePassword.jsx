@@ -1,7 +1,10 @@
+import ChangePasswordComponent from '../../components/common/ChangePasswordComponent';
 
 function ChangePassword() {
   return (
-    <div>ChangePassword</div>
+    <div>
+      <ChangePasswordComponent/>
+    </div>
   )
 }
 

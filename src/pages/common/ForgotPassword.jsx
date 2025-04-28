@@ -1,7 +1,10 @@
+import ForgotPasswordComponent from '../../components/common/ForgotPasswordComponent';
 
 function ForgotPassword() {
   return (
-    <div>ForgotPassword</div>
+    <div>
+      <ForgotPasswordComponent/>
+    </div>
   )
 }
 

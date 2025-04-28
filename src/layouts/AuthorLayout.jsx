@@ -1,18 +1,17 @@
 import { Outlet } from "react-router-dom";
+import NavbarComponent from '../components/common/NavbarComponent';
+import FooterComponent from '../components/common/FooterComponent';
 
 function AuthorLayout() {
   return (
-    <div>
-      {/* Navbar */}
-      <h1>Navbar</h1>
+    <div className="flex flex-col min-h-screen">
+      <NavbarComponent/>
 
-      {/* Body */}
-      <main>
-        <Outlet/>
+      <main className="flex-1">
+        <Outlet />
       </main>
 
-      {/* Footer */}
-      <h1>Footer</h1>
+      <FooterComponent/>
     </div>
   )
 }

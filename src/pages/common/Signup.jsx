@@ -1,7 +1,12 @@
+import SignupComponent from '../../components/common/SignupComponent';
 
 function Signup() {
   return (
-    <div>Signup</div>
+    <>
+      <div>
+        <SignupComponent/>
+      </div>
+    </>
   )
 }
 

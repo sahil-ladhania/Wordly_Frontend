@@ -1,7 +1,10 @@
+import LoginComponent from '../../components/common/LoginComponent';
 
 function Login() {
   return (
-    <div>Login</div>
+    <div>
+      <LoginComponent/>
+    </div>
   )
 }
 
